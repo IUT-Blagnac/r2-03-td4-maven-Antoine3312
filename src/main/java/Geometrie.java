@@ -54,6 +54,15 @@ public class Geometrie
     /**
      * Surface du gazon, en m2. Toutes les données sont en m.
      * Terrain, maison, appenti et piscine s'organisent comme vu en TD.
+     * @param longueurTerrain longueur du terran
+     * @param largeurTerrain largueur du terrain
+     * @param diametrePiscine diametre de la piscine
+     * @param longueurMaison longueur de la maison
+     * @param largeurMaison largeur de la maison
+     * @param longueurAppenti longueur de la penti
+     * @param surfaceGazon surface du gazon
+     * 
+     * @return la surface du gazon
      */
     public static double surfaceGazon(double longueurTerrain, double largeurTerrain,
     double diametrePiscine, double longueurMaison, double largeurMaison, double longueurAppenti) {
@@ -80,7 +89,14 @@ public class Geometrie
 
     /**
      * Affiche les informations sur la tonte du gazon. Toutes les données sont en m.
-     */
+     * @param longueurTerrain longueur du terran
+     * @param largeurTerrain largueur du terrain
+     * @param diametrePiscine diametre de la piscine
+     * @param longueurMaison longueur de la maison
+     * @param largeurMaison largeur de la maison
+     * @param longueurAppenti longueur de la penti
+     * 
+     * */
     public static void informationTonte(double longueurTerrain, double largeurTerrain,
     double diametrePiscine, double longueurMaison, double largeurMaison, double longueurAppenti) {
         /* déclaration des variables de travail */
