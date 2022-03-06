@@ -15,3 +15,13 @@ Dans la deuxieme classe ce situe toute les fonction permettant de renvoyer des c
 
 == Pourquoi le dépot fonctionne-t-il?
 
+Pour faire fonctionner le dépot, j'ai modifier le fichier pom.xml afin que la bonne classe soit détecter à la compilation. Nous voulions que le main de la classe Geometrie.java soit prit en compte et non celui de la classe Hellojava.java.
+
+Pour cela, j'ai dans le fichier pom.xml changer le contenu de la balise mainClass par le nom de la classe souhaiter. Cette balise se situe dans la balise manifest.
+
+Voici les modifiecation que j'ai fait pour que le bon main soit détecter :
+---
+<manifest>
+    <mainClass>Geometrie</mainClass>
+</manifest>
+---
