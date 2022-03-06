@@ -25,3 +25,26 @@ Voici les modifiecation que j'ai fait pour que le bon main soit détecter :
     <mainClass>Geometrie</mainClass>
 </manifest>
 ....
+
+=== Javadoc
+ 
+La javadoc se situe dans le dossier target puis dans site / apidocs. Il vous suffit d'ouvrit le fichier index.html pour l'obetenir sur votre navigateur.
+
+Pour générer cette derniere il fait utiliser la commande :
+....
+mvn javadoc:javadoc
+....
+
+=== Faire fonctionner la classe Geometrie.java
+
+Pour faire fonctionner cette classe, il vous suffit de faire ces deux ligne de code dans la console :
+....
+mvn package
+....
+
+Puis 
+....
+java -jar target/tp_qualite-1.0.jar
+....
+
+Cela vous renverras la surface d'un oval.
